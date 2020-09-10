@@ -4,6 +4,7 @@ install:
   - sudo dpkg -i hugo_0.74.3_Linux-64bit.deb
 script:
   - hugo
+  - chmod +x deploy.sh
   - ./deploy.sh
   - cd public
   - git remote show origin
