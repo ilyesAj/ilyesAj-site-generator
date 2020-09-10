@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "http://ilyesAj.github.io/"
+baseURL = "https://ilyesAj.github.io/"
 languageCode = "en-us"
 # theme
 theme = "Dot"
