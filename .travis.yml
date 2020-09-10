@@ -10,3 +10,9 @@ deploy:
     cleanup: false
     on:
       branch: master
+script: 
+   - cd public
+   - git remote show origin
+   - git add .
+   - git commit -m "Rebuild site"
+   - git push --force origin HEAD:master
