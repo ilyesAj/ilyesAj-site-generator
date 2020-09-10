@@ -1,3 +1,6 @@
 [submodule "themes/Dot"]
 	path = themes/Dot
 	url = https://github.com/themefisher/dot.git
+[submodule "public"]
+	path = public
+	url = https://github.com/ilyesAj/ilyesAj.github.io.git
