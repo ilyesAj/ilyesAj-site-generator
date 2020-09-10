@@ -7,6 +7,6 @@ script:
 deploy:
   - provider: script
     script: ./deploy.sh
-    cleanup: true
+    cleanup: false
     on:
       branch: master
