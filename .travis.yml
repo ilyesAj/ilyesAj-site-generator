@@ -4,8 +4,8 @@ install:
   - sudo dpkg -i hugo_0.74.3_Linux-64bit.deb
 script:
   - hugo
-  - cd public
   - ./deploy.sh
+  - cd public
   - git remote show origin
   - git add .
   - git commit -m "Rebuild site"
