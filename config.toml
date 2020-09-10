@@ -1,6 +1,5 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://examplesite.com/"
 baseURL = "http://ilyesAj.github.io/"
 languageCode = "en-us"
 # theme
@@ -8,7 +7,7 @@ theme = "dot"
 # site title
 title = "Dot"
 # disable language
-disableLanguages = [Fr]
+disableLanguages = ["Fr"]
 # google analytics
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 # unsafe html
