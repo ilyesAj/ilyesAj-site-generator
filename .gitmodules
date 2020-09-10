@@ -1,0 +1,3 @@
+[submodule "themes/Dot"]
+	path = themes/Dot
+	url = https://github.com/themefisher/dot.git
