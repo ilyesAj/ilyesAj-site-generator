@@ -3,7 +3,7 @@
 baseURL = "http://ilyesAj.github.io/"
 languageCode = "en-us"
 # theme
-theme = "dot"
+theme = "Dot"
 # site title
 title = "Dot"
 # disable language
