@@ -9,6 +9,7 @@ before_script:
   - git config user.name "ilyesAj-bot"
   - git remote set-url origin https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
 script:
+  - cd ..
   - hugo
   - cd public
   - echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
