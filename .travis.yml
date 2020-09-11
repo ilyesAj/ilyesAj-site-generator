@@ -2,11 +2,15 @@
 install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
   - sudo dpkg -i hugo_0.74.3_Linux-64bit.deb
+before_script:
+  - echo -e "\033[0;32mConfiguring GitHub...\033[0m"
+  - git config user.email "ilyesAj-bot@users.noreply.github.com"
+  - git config user.name "ilyesAj-bot"
+  - git remote set-url origin https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
 script:
   - hugo
   - cd public
-  - git remote set-url origin https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
-  - git remote show origin
+  - echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
   - git add .
   - git commit -m "Rebuild site"
   - git push --force origin HEAD:master
