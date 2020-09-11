@@ -3,6 +3,7 @@ install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
   - sudo dpkg -i hugo_0.74.3_Linux-64bit.deb
 before_script:
+  - cd public
   - echo -e "\033[0;32mConfiguring GitHub...\033[0m"
   - git config user.email "ilyesAj-bot@users.noreply.github.com"
   - git config user.name "ilyesAj-bot"
