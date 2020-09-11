@@ -5,7 +5,7 @@ install:
 script:
   - hugo
   - cd public
-  - git remote add origin https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
+  - git remote add master https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
   - git remote show origin
   - git add .
   - git commit -m "Rebuild site"
