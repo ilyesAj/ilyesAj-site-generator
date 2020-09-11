@@ -4,9 +4,8 @@ install:
   - sudo dpkg -i hugo_0.74.3_Linux-64bit.deb
 script:
   - hugo
-  - chmod +x deploy.sh
-  - ./deploy.sh
   - cd public
+  - git remote add origin https://${GH_TOKEN}@github.com/ilyesAj/ilyesAj.github.io.git
   - git remote show origin
   - git add .
   - git commit -m "Rebuild site"
